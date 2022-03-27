@@ -1,0 +1,128 @@
+@import "~@angular/material/theming";
+
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400&display=swap");
+
+$custom-typography: mat-typography-config(
+  $font-family: "Merriweather Sans",
+  $headline: mat-typography-level(50px, 48px, 500),
+);
+
+@include mat-core($custom-typography);
+// GAMA COLORES
+$my-primary-color: (
+  50: #feece7,
+  100: #fcd0c4,
+  200: #fab19d,
+  300: #f79175,
+  400: #f67a58,
+  500: #f4623a,
+  600: #f35a34,
+  700: #f1502c,
+  800: #ef4625,
+  900: #ec3418,
+  A100: #ffffff,
+  A200: #ffedeb,
+  A400: #ffbfb8,
+  A700: #ffa99e,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+);
+
+$my-accent-color: (
+  50: #edf9e6,
+  100: #d2efc1,
+  200: #b5e598,
+  300: #97da6f,
+  400: #80d250,
+  500: #6aca31,
+  600: #62c52c,
+  700: #57bd25,
+  800: #4db71f,
+  900: #3cab13,
+  A100: #e4ffdc,
+  A200: #bdffa9,
+  A400: #96ff76,
+  A700: #82ff5d,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+);
+
+$my-warn-color: (
+  50: #ffe0e0,
+  100: #ffb3b3,
+  200: #ff8080,
+  300: #ff4d4d,
+  400: #ff2626,
+  500: #ff0000,
+  600: #ff0000,
+  700: #ff0000,
+  800: #ff0000,
+  900: #ff0000,
+  A100: #ffffff,
+  A200: #fff2f2,
+  A400: #ffbfbf,
+  A700: #ffa6a6,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+);
+
+// PALETA DE COLORES
+$my-palette-primary: mat-palette($my-primary-color);
+$my-palette-accent: mat-palette($my-accent-color);
+$my-palette-warn: mat-palette($my-warn-color);
+
+// TEMA PROPIO
+$my-theme: mat-light-theme(
+  (
+    color: (
+      primary: $my-palette-primary,
+      accent: $my-palette-accent,
+      warn: $my-palette-warn,
+    ),
+  )
+);
+
+// APLICAR NUESTRO TEMA A ANGULAR
+@include angular-material-theme($my-theme);
