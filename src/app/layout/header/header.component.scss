@@ -1,13 +1,28 @@
 nav {
-  background: rgba(255, 255, 255, 0.781);
-  font-size: 30px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  font-size: 15px;
+  font-weight: 300;
+  color: white;
+  //border-bottom: solid 0.5px rgba($color: #ffffff, $alpha: 0.4);
 }
 
 .flex {
   display: flex;
   align-items: center;
-  background: red;
   width: 80%;
   margin: auto;
+}
+
+.nav-container {
+  img {
+    height: 50px;
+  }
+  li {
+    text-decoration: none;
+    list-style: none;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }

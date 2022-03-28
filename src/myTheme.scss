@@ -1,35 +1,35 @@
 @import "~@angular/material/theming";
 
-@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,300;1,400&display=swap");
 
 $custom-typography: mat-typography-config(
-  $font-family: "Merriweather Sans",
-  $headline: mat-typography-level(50px, 48px, 500),
+  $font-family: "Montserrat",
+  $headline: mat-typography-level(4.5rem, 1px, 700),
 );
 
 @include mat-core($custom-typography);
 // GAMA COLORES
 $my-primary-color: (
-  50: #feece7,
-  100: #fcd0c4,
-  200: #fab19d,
-  300: #f79175,
-  400: #f67a58,
-  500: #f4623a,
-  600: #f35a34,
-  700: #f1502c,
-  800: #ef4625,
-  900: #ec3418,
+  50: #fff8e0,
+  100: #ffefb3,
+  200: #ffe480,
+  300: #ffd94d,
+  400: #ffd026,
+  500: #ffc800,
+  600: #ffc200,
+  700: #ffbb00,
+  800: #ffb400,
+  900: #ffa700,
   A100: #ffffff,
-  A200: #ffedeb,
-  A400: #ffbfb8,
-  A700: #ffa99e,
+  A200: #fffaf2,
+  A400: #ffe6bf,
+  A700: #ffdca6,
   contrast: (
     50: #000000,
     100: #000000,
     200: #000000,
     300: #000000,
-    400: #000000,
+    400: #ffffff,
     500: #ffffff,
     600: #ffffff,
     700: #ffffff,
