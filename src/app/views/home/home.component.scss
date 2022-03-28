@@ -1,0 +1,24 @@
+.home-container {
+  background-image: url("./../../../assets/fondos/home.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 800px;
+  position: relative;
+  button {
+    position: absolute;
+    font-size: 2em;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    top: 70%;
+  }
+}
+
+.services-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0px;
+}

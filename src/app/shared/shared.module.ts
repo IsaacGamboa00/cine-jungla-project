@@ -1,34 +1,28 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { NgbModule, NgbPaginationModule, NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSliderModule } from '@angular/material/slider';
-import { BrowserModule } from '@angular/platform-browser';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 
 
 @NgModule({
   declarations: [],
   imports: [
-    BrowserModule,
-    CommonModule,
     NgbModule,
     NgbPaginationModule,
     NgbAlertModule,
-    BrowserAnimationsModule,
     MatButtonModule,
-    MatSliderModule
+    MatSliderModule,
+    MatToolbarModule
   ],
   exports: [
-    BrowserModule,
-    CommonModule,
     NgbModule,
     NgbPaginationModule,
     NgbAlertModule,
-    BrowserAnimationsModule,
     MatButtonModule,
-    MatSliderModule
+    MatSliderModule,
+    MatToolbarModule
   ]
 })
 export class SharedModule { }
