@@ -1,8 +1,15 @@
-nav {
+.nav-no-sticky {
+  transition: ease-in-out 0.5s;
   font-size: 15px;
   font-weight: 300;
   color: white;
-  //border-bottom: solid 0.5px rgba($color: #ffffff, $alpha: 0.4);
+}
+.nav-sticky {
+  transition: ease-in-out 0.5s;
+  font-size: 15px;
+  font-weight: 300;
+  color: black;
+  background: rgba($color: #c9c9c9, $alpha: 0.8);
 }
 
 .flex {
@@ -19,10 +26,22 @@ nav {
   li {
     text-decoration: none;
     list-style: none;
+    cursor: pointer;
   }
   ul {
+    margin: 0;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+  }
+
+  li:hover {
+    color: #ffc800;
+    font-size: 17px;
+    border-bottom: #ffc800 solid 1px;
+    transition: color 0.5s;
+    transition: font-size 0.5s, border-bottom 0.5s;
+    transition-timing-function: ease-in-out;
   }
 }

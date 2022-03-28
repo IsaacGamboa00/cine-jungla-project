@@ -1,9 +1,9 @@
-<nav class="w-100 py-4">
+<nav [ngClass]="this.isSticky ? 'nav-sticky w-100 py-4': 'nav-no-sticky w-100 py-4'">
     <div class="nav-container flex">
-        <div class="w-25">
+        <div class="w-25 aling-center-vertical">
             <img src="./../../../assets/logo/Cine Jungla.png" alt="Cine Jungla">
         </div>
-        <div class="w-75">
+        <div class="w-75 aling-center-vertical">
             <ul>
                 <li>SERVICES</li>
                 <li>ABOUT</li>
