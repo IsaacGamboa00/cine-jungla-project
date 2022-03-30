@@ -22,4 +22,9 @@ export class HeaderComponent implements OnInit {
     }
 
   }
+
+
+  to(section: string) {
+    document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
+  }
 }
