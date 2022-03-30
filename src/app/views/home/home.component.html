@@ -1,0 +1,35 @@
+<div class="home-container">
+    <button mat-raised-button color="primary">COMPRA YA</button>
+</div>
+<div class="section-container">
+    <h2 class="mb-5">SERVICIOS</h2>
+    <div class="row w-75">
+        <div *ngFor="let service of services" class="col-md-6">
+            <div class="container_item-service">
+                <div class="item-service">
+                    <div class="div-hover">
+                        <img src="./../../../assets/imgsHome/plus.png">
+                    </div>
+                    <img [src]="service.img" [alt]="service.name">
+                </div>
+                <div class="txt-item">
+                    <label>{{service.name}} </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section-container our-team">
+    <h2>NUESTRO EQUIPO</h2>
+    <div class="row-team w-75">
+        <div *ngFor="let user of users">
+            <div class="container_item-user text-center">
+                <img [src]="user.img">
+                <div class="my-5">
+                    <h3>{{user.name}}</h3>
+                    <label> {{user.role}} </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
