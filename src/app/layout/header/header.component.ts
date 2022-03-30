@@ -15,7 +15,7 @@ export class HeaderComponent implements OnInit {
   @HostListener("window:scroll", [])
   onWindowScroll() {
     const number = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-    if (number > 300) {
+    if (number > 50) {
       this.isSticky = true;
     } else {
       this.isSticky = false;

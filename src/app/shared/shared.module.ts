@@ -3,6 +3,9 @@ import { NgbModule, NgbPaginationModule, NgbAlertModule } from '@ng-bootstrap/ng
 import { MatButtonModule } from '@angular/material/button';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { CommonModule } from '@angular/common';
+import { MatCardModule } from '@angular/material/card';
+
 
 
 
@@ -14,7 +17,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     NgbAlertModule,
     MatButtonModule,
     MatSliderModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatCardModule,
+    CommonModule
   ],
   exports: [
     NgbModule,
@@ -22,7 +27,10 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     NgbAlertModule,
     MatButtonModule,
     MatSliderModule,
-    MatToolbarModule
+    MatToolbarModule,
+    CommonModule,
+    MatCardModule,
+
   ]
 })
 export class SharedModule { }
