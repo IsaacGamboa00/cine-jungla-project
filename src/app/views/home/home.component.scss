@@ -13,6 +13,17 @@
     margin-right: auto;
     width: 15%;
     top: 70%;
+    
+  }
+}
+
+@media only screen and (max-width: 1650px) {
+  .home-container {
+    
+    button {
+      font-size: 1.5em !important;
+      top: 60%;
+    }
   }
 }
 

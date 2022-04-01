@@ -5,7 +5,7 @@
     <h2 class="mb-5">SERVICIOS</h2>
     <div class="row w-75">
         <div *ngFor="let service of services" class="col-md-6">
-            <div class="container_item-service">
+            <div class="container_item-service" (click)="navigateTo(service.name)">
                 <div class="item-service">
                     <div class="div-hover">
                         <img src="./../../../assets/imgsHome/plus.png">
@@ -13,7 +13,7 @@
                     <img [src]="service.img" [alt]="service.name">
                 </div>
                 <div class="txt-item">
-                    <label>{{service.name}} </label>
+                    <label>{{service.name}}</label>
                 </div>
             </div>
         </div>

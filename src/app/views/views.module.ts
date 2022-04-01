@@ -4,6 +4,8 @@ import { LoginComponent } from './login/login.component';
 import { ViewsRoutingModule } from './views-routing.module';
 import { SharedModule } from '../shared/shared.module';
 import { CommonModule } from '@angular/common';
+import { BuyFoodComponent } from './buy-food/buy-food.component';
+import { BuyTicketsComponent } from './buy-tickets/buy-tickets.component';
 
 
 
@@ -11,7 +13,9 @@ import { CommonModule } from '@angular/common';
 @NgModule({
   declarations: [
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    BuyFoodComponent,
+    BuyTicketsComponent
   ],
 
   imports: [
