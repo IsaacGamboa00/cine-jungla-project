@@ -1,4 +1,57 @@
+<div class="food-container">
+    <h1>
+        ¡Compra tus alimentos a precios salvajemente buenos!
+    </h1>
+</div>
 
-<div class="food-containter">
-    <p>buy-food works!</p>
+<div class="section-container food" id="food-section">
+    <div class="row-team w-100 row">
+        <div class="col-md-6" *ngFor="let consumibles of food">
+            <div class="containter_item_user text-center">
+                <img [src]="consumibles.img" alt="comida">
+                <div class="my-5">
+                    <h3>{{consumibles.name}}</h3>
+                    <label>{{consumibles.price}}</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="drinks-container">
+    <h1>
+        ¡Para refrescar esa sed Salvaje¡
+    </h1>
+</div>
+
+<div class="section-container drinks" id="drinks-section">
+    <div class="row-team w-100 row">
+        <div class="col-md-6" *ngFor="let drink of drinks">
+            <div class="container_item_user text-center">
+                <img [src]="drink.img" alt="Bebida">
+                <div class="my-5">
+                    <h3>{{drink.name}}</h3>
+                    <label>{{drink.price}}</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="sweetmeats-container">
+    <h1>
+        ¡COMO MIEL DE ABEJA Y MAPLE!
+    </h1>
+</div>  
+<div class="section-container sweetmeats" id="Sweetmeats-section">
+    <div class="row-team w-100 row">
+        <div class="col-md-6" *ngFor="let dulce of sweetmeats">
+            <div class="container_item_user text-center">
+                <img [src]="dulce.img" alt="Dulce">
+                <div class="my-5">
+                    <h3>{{dulce.name}}</h3>
+                    <label>{{dulce.price}}</label>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

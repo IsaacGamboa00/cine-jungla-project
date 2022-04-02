@@ -1,5 +1,37 @@
-.food-containter{
+.food-container {
+    background-image: url("./../../../assets/imgsHome/alimentos.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 800px;
-    background: black;
+    width: 100%;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
+}
+.drinks-container{
+    background-image: url("./../../../assets/imgsBebid/bebidas.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;  
+    width: 100%;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sweetmeats-container{
+    background-image: url("./../../../assets/imgsConfi/dulces.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;  
+    width: 100%;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
