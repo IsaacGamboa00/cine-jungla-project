@@ -1,3 +1,30 @@
 <div class="login-container">
+   <h2>Inicio de sesión</h2>
+   <div class="form-container">
+      <form [formGroup]="this.form">
+         <mat-form-field appearance="outline">
+            <mat-label>Numero de identificacion</mat-label>
+            <input matInput type="text" formControlName="numero_id_empleado">
+         </mat-form-field>
+         <mat-form-field appearance="outline">
+            <mat-label>Contraseña</mat-label>
+            <input matInput type="password" formControlName="password">
+         </mat-form-field>
+         <mat-form-field appearance="outline">
+            <mat-label>Tipo de identificación</mat-label>
+            <mat-select formControlName="tipo_id_empleado">
+               <mat-option value="CC">
+                  CC
+               </mat-option>
+               <mat-option value="TI">
+                  TI
+               </mat-option>
+               <mat-option value="PA">
+                  PA
+               </mat-option>
+            </mat-select>
+         </mat-form-field>
 
+      </form>
+   </div>
 </div>

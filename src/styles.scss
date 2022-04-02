@@ -44,3 +44,43 @@ button {
 mat-card {
   padding: 0 !important;
 }
+
+.mat-form-field {
+  .mat-input-element {
+      color: #ffc800 ;
+  }
+  .mat-form-field-label {
+      color: #ffc800 ;
+  }
+  .mat-form-field-underline {
+      background-color: #ffc800 ;
+  }
+  .mat-form-field-ripple {
+      background-color: #ffc800 ;
+  }
+
+  .mat-form-field-required-marker {
+      color: #ffc800 ;
+  }
+  .mat-select-value{
+    color: #ffc800;
+  }
+}
+
+
+ .mat-form-field.mat-focused {
+  .mat-form-field-label {
+      color: #ff884d;
+  }
+  .mat-form-field-ripple {
+      background-color: #ff884d;
+  }
+  .mat-form-field-required-marker {
+      color: #ff884d;
+  }
+  .mat-input-element {
+      color: #ff884d;
+  }
+}
+
+

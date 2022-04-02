@@ -6,6 +6,7 @@ import { SharedModule } from '../shared/shared.module';
 import { CommonModule } from '@angular/common';
 import { BuyFoodComponent } from './buy-food/buy-food.component';
 import { BuyTicketsComponent } from './buy-tickets/buy-tickets.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -21,6 +22,7 @@ import { BuyTicketsComponent } from './buy-tickets/buy-tickets.component';
   imports: [
     ViewsRoutingModule,
     SharedModule,
+    ReactiveFormsModule
 
   ],
   exports: [
