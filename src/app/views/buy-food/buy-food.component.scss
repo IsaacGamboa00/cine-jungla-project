@@ -1,5 +1,98 @@
-.food-containter{
+.food-container {
+    background-image: url("./../../../assets/imgsHome/alimentos.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 800px;
-    background: black;
+    width: 100%;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
+}
+.drinks-container{
+    background-image: url("./../../../assets/imgsBebid/bebidas.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;  
+    width: 100%;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sweetmeats-container{
+    background-image: url("./../../../assets/imgsConfi/dulces.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;  
+    width: 100%;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.AgrCarrito-container{
+    background-image: url("./../../../assets/imgsAlim/popcorn3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;  
+    width: 100%;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    color: rgb(209, 243, 55);
+}
+.div-compra:hover{
+    transform: translateY(-5px);
+    box-shadow: 2px 12px 16px rgba(0,0,0,0.2);
+    border-radius: 50px;
+}
+.cantidad{
+    outline: none;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: 0;
+    padding: 5px;
+    background-color: rgb(49, 214, 27);
+}
+button{
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 15px;
+    margin-bottom: 5px;
+    border: none;
+    background-color: rgb(111, 173, 61);
+    cursor: pointer;
+    color:black;
+}
+.button-GoCar{
+    margin: auto;
+    padding: 20px;
+    font-size: 70px;
+    margin-bottom: 500px;    
+}
+.img-compra{
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    justify-content: center;
+    width: 70%;
+    border-radius: 15px;
+    transition:  all 0.4s;
+}
+.img-compra:hover{
+    transform: translateY(-5px);
+    box-shadow: 2px 12px 16px rgba(0,0,0,0.2);
 }
