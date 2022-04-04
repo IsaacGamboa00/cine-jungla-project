@@ -9,6 +9,9 @@ import { BuyTicketsComponent } from './buy-tickets/buy-tickets.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 
+import { UsersInfoComponent } from './users-info/users-info.component';
+
+
 
 
 
@@ -18,7 +21,10 @@ import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
     LoginComponent,
     BuyFoodComponent,
     BuyTicketsComponent,
-    ShoppingCartComponent
+
+    ShoppingCartComponent,
+
+    UsersInfoComponent
   ],
 
   imports: [

@@ -1,0 +1,24 @@
+<div class="usersInf">
+<h1>Informacion de los Clientes</h1>
+</div>
+
+<div class="section-container clientes">
+    <div class="row-team w-100 row">
+        <div class="col-md-3 p-5" *ngFor="let u of users">
+            <div class="div-cliente">
+                <div class="container_item_user text-center">
+                    <div class="div-hover">
+                        <img class="img-user" [src]="u.img" alt="Usuario">
+                    </div>
+                    <div class="my-5">
+                        <h3>{{u.id}}</h3>
+                        <h3>{{u.name}}</h3>
+                        <h3>{{u.lastname}}</h3>
+                        <h4>{{u.correo}}</h4>
+                        <button (click)="verInfo(u.id)" mat-raised-button color="primary">Ver Informacion</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
