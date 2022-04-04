@@ -1,0 +1,57 @@
+.section-container{
+    background-image: url('./../../../assets/fondos/cinema.jpg');
+    background-size: cover;
+    width: 100%;
+    min-height: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 0px;
+    .movies-container{
+        background: rgba($color: #000000, $alpha: 0.5); 
+        width: 80%;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+    }
+    select{
+        margin: 50px 0px;
+    }
+}
+
+#select-multiplex{
+    background: none;
+    width: 70%;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    border: 3px black solid;
+    border-radius: 20px;
+}
+
+#select-multiplex:hover{
+    background: #ffc8005d;
+    
+}
+
+
+.item-movie{
+    background: rgba(255, 255, 255, 0.363);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 30px;
+    padding: 30px;
+    height: 800px;
+    text-align: center;
+    .title{
+        font-weight: bold;
+        font-size:2em;
+    }
+    h3{
+        font-size:1.5em;
+    }
+
+}

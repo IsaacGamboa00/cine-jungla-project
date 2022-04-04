@@ -57,13 +57,16 @@ export class HomeComponent implements OnInit {
   }
 
   navigateTo(title: string) {
-    if (title == 'Alimentos') {
-      this.router.navigateByUrl('/food');
+    if (localStorage.getItem("id") != null && localStorage.getItem("pass") != null) {
+      if (title == 'Alimentos') {
+        this.router.navigateByUrl('/food');
+      }
+      if (title == 'Peliculas') {
+        this.router.navigateByUrl('/tickets');
+      }
+    } else {
+      this.router.navigateByUrl('/login');
     }
-    if (title == 'Peliculas') {
-      this.router.navigateByUrl('/tickets');
-    }
-
   }
 
 

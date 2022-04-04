@@ -1,1 +1,28 @@
-<p>buy-tickets works!</p>
+<div class="section-container">
+    <select id='select-multiplex' name="select" (change)="getMoviesList($event)">
+        <option value="--"> Selecciona un multiplex </option>
+        <option *ngFor="let multiplex of multiplexes" [value]="multiplex.id_multiplex"> {{multiplex.nombre_multiplex}}
+        </option>
+    </select>
+    <div class="movies-container row">
+        <mat-spinner *ngIf="this.movies == []"></mat-spinner>
+        <div class="col-md-4 p-5" *ngFor="let movie of movies">
+            <div class="item-movie">
+                <img class="w-100 mb-5" [src]="'./../../../assets/imgPeliculas/'+this.movie.id_pelicula+'.jpg'" alt="">
+                <p class="title">
+                    {{movie.nombre}}
+                </p>
+                <h3>
+                    {{movie.genero}}
+                </h3>
+                <h3>
+                    Duracion: {{movie.duracion}}m
+                </h3>
+                <h3>
+                    Sala: {{movie.numero_sala_multiplex}}
+                </h3>
+            </div>
+        </div>
+
+    </div>
+</div>

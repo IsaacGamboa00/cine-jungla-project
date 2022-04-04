@@ -14,7 +14,7 @@
                         <h3>{{consumibles.name}}</h3>
                         <label>{{consumibles.price}}</label>
                         <input #comida class="cantidad" type="number" min="0" max="50" value="0">
-                        <button (click)="addComida(comida.value)">
+                        <button (click)="addComida(comida.value, consumibles.priceNumber)">
                             Añadir a Carro
                         </button>
                     </div>
@@ -39,7 +39,7 @@
                         <h3>{{drink.name}}</h3>
                         <label>{{drink.price}}</label>
                         <input #bebida class="cantidad" type="number" min="0" max="50" value="0">
-                        <button (click)="addComida(bebida.value)">
+                        <button (click)="addComida(bebida.value, drink.priceNumber)">
                             Añadir a Carro
                         </button>
                     </div>
@@ -58,12 +58,12 @@
         <div class="col-md-6" *ngFor="let dulce of sweetmeats">
             <div class="div-compra">
                 <div class="container_item_user text-center">
-                    <img class="img-compra"  [src]="dulce.img" alt="Dulce">
+                    <img class="img-compra" [src]="dulce.img" alt="Dulce">
                     <div class="my-5">
                         <h3>{{dulce.name}}</h3>
                         <label>{{dulce.price}}</label>
                         <input #dulc class="cantidad" type="number" min="0" max="50" value="0">
-                        <button (click)="addComida(dulc.value)">
+                        <button (click)="addComida(dulc.value,dulce.priceNumber)">
                             Añadir a Carro
                         </button>
                     </div>
@@ -73,7 +73,7 @@
     </div>
 </div>
 <div class="AgrCarrito-container">
-    <button  (click)="facturar()" class="button-GoCar" mat-raised-button color="primary">
+    <button (click)="facturar()" class="button-GoCar" mat-raised-button color="primary">
         ¡Realizar Compra!
-    </button>   
+    </button>
 </div>
