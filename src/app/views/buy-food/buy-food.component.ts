@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { toInteger } from '@ng-bootstrap/ng-bootstrap/util/util';
 
 @Component({
   selector: 'app-buy-food',
@@ -92,12 +93,26 @@ export class BuyFoodComponent implements OnInit {
       name: 'Trident Menta',
       price: '$3.800'
     },
-
   ];
+
+  public cantTotal: number=0;
+
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  public facturar(){
+    alert("SE VA A FACTURAR");
+  }
+  public addComida(e: any){
+    if(e<=0){
+      alert("Ingrese una cantidad valida")
+    }else{
+      e = Number(e);
+      this.cantTotal = this.cantTotal + e;
+      alert("Se agrego al carrito tu total de productos es igual a: " + this.cantTotal);
+    }
+  }
 }

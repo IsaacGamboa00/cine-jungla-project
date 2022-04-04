@@ -7,31 +7,42 @@
 <div class="section-container food" id="food-section">
     <div class="row-team w-100 row">
         <div class="col-md-6" *ngFor="let consumibles of food">
-            <div class="containter_item_user text-center">
-                <img [src]="consumibles.img" alt="comida">
-                <div class="my-5">
-                    <h3>{{consumibles.name}}</h3>
-                    <label>{{consumibles.price}}</label>
+            <div class="div-compra">
+                <div class="containter_item_user text-center">
+                    <img class="img-compra" [src]="consumibles.img" alt="comida">
+                    <div class="my-5">
+                        <h3>{{consumibles.name}}</h3>
+                        <label>{{consumibles.price}}</label>
+                        <input #comida class="cantidad" type="number" min="0" max="50" value="0">
+                        <button (click)="addComida(comida.value)">
+                            Añadir a Carro
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
 </div>
 <div class="drinks-container">
     <h1>
-        ¡Para refrescar esa sed Salvaje¡
+        ¡PARA REFRESCAR ESA SED SALVAJE¡
     </h1>
 </div>
 
 <div class="section-container drinks" id="drinks-section">
     <div class="row-team w-100 row">
         <div class="col-md-6" *ngFor="let drink of drinks">
-            <div class="container_item_user text-center">
-                <img [src]="drink.img" alt="Bebida">
-                <div class="my-5">
-                    <h3>{{drink.name}}</h3>
-                    <label>{{drink.price}}</label>
+            <div class="div-compra">
+                <div class="container_item_user text-center">
+                    <img class="img-compra" [src]="drink.img" alt="Bebida">
+                    <div class="my-5">
+                        <h3>{{drink.name}}</h3>
+                        <label>{{drink.price}}</label>
+                        <input #bebida class="cantidad" type="number" min="0" max="50" value="0">
+                        <button (click)="addComida(bebida.value)">
+                            Añadir a Carro
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -41,17 +52,28 @@
     <h1>
         ¡COMO MIEL DE ABEJA Y MAPLE!
     </h1>
-</div>  
+</div>
 <div class="section-container sweetmeats" id="Sweetmeats-section">
     <div class="row-team w-100 row">
         <div class="col-md-6" *ngFor="let dulce of sweetmeats">
-            <div class="container_item_user text-center">
-                <img [src]="dulce.img" alt="Dulce">
-                <div class="my-5">
-                    <h3>{{dulce.name}}</h3>
-                    <label>{{dulce.price}}</label>
+            <div class="div-compra">
+                <div class="container_item_user text-center">
+                    <img class="img-compra"  [src]="dulce.img" alt="Dulce">
+                    <div class="my-5">
+                        <h3>{{dulce.name}}</h3>
+                        <label>{{dulce.price}}</label>
+                        <input #dulc class="cantidad" type="number" min="0" max="50" value="0">
+                        <button (click)="addComida(dulc.value)">
+                            Añadir a Carro
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+<div class="AgrCarrito-container">
+    <button  (click)="facturar()" class="button-GoCar" mat-raised-button color="primary">
+        ¡Realizar Compra!
+    </button>   
 </div>
