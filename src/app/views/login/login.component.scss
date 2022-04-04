@@ -7,16 +7,29 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: rgb(255, 255, 255);
+    h2{
+      margin-bottom: 100px;
+    }
   }
   .form-container{
     padding: 30px;
     width: 50%;
+    background: rgba(255, 255, 255, 0.212);
     form{
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: space-between;
       align-items: center;
     }
+
+    .btn-submit{
+      width: 50%;
+      button{
+        width: 100%;
+      }
+      
+    }
+   
     
   }
