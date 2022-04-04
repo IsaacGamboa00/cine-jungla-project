@@ -7,6 +7,7 @@ import { CommonModule } from '@angular/common';
 import { BuyFoodComponent } from './buy-food/buy-food.component';
 import { BuyTicketsComponent } from './buy-tickets/buy-tickets.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { UsersInfoComponent } from './users-info/users-info.component';
 
 
 
@@ -16,7 +17,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     HomeComponent,
     LoginComponent,
     BuyFoodComponent,
-    BuyTicketsComponent
+    BuyTicketsComponent,
+    UsersInfoComponent
   ],
 
   imports: [
