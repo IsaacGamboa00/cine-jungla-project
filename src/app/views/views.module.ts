@@ -10,6 +10,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 
 import { UsersInfoComponent } from './users-info/users-info.component';
+import { EmployeesInfoComponent } from './employees-info/employees-info.component';
 
 
 
@@ -24,7 +25,8 @@ import { UsersInfoComponent } from './users-info/users-info.component';
 
     ShoppingCartComponent,
 
-    UsersInfoComponent
+    UsersInfoComponent,
+      EmployeesInfoComponent
   ],
 
   imports: [

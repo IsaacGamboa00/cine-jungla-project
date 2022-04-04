@@ -1,0 +1,60 @@
+.usersInf {
+    background-image: url("./../../../assets/imgsAlim/popcorn3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+    width: 100%;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-user{
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    justify-content: center;
+    width: 70%;
+    border-radius: 15px;
+    transition:  all 0.4s;
+}
+.img-cliente:hover{
+    transform: translateY(-5px);
+    box-shadow: 2px 12px 16px rgba(0,0,0,0.2);
+}
+h1{
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    color: rgb(194, 108, 28);
+}
+h3,h4{  
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+    color: black;
+}
+
+.div-cliente:hover{
+    transform: translateY(-5px);
+    box-shadow: 2px 12px 16px rgba(0,0,0,0.2);
+    border-radius: 50px;
+}
+.img-user{
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    justify-content: center;
+    width: 70%;
+    border-radius: 15px;
+    transition:  all 0.4s;
+}
+.img-user:hover{
+    transform: translateY(-5px);
+    box-shadow: 2px 12px 16px rgba(0,0,0,0.2);
+}
+.row-team{
+    background-image: url("./../../../assets/fondos/fondCont.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+}
