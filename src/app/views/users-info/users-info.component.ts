@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { GeneralService } from '../services.service';
+import { DetailUserComponent } from '../detail-user/detail-user.component';
 
 @Component({
   selector: 'app-users-info',
@@ -9,58 +11,12 @@ import { GeneralService } from '../services.service';
 export class UsersInfoComponent implements OnInit {
 
   public users: any[] = [
-    {
-      img: './../../../assets/imgInfoUser/avatar.png',
-      id: '121251',
-      name: 'Juan Camilo',
-      lastaname: 'Céspedes Romero',
-      correo: 'juankamilocromero@gmail.com'
-    },
-    {
-      img: './../../../assets/imgInfoUser/avatar.png',
-      id: '121251',
-      name: 'Juan Camilo',
-      lastaname: 'Céspedes Romero',
-      correo: 'juankamilocromero@gmail.com'
-    },
-    {
-      img: './../../../assets/imgInfoUser/avatar.png',
-      id: '121251',
-      name: 'Juan Camilo',
-      lastaname: 'Céspedes Romero',
-      correo: 'juankamilocromero@gmail.com'
-    },
-    {
-      img: './../../../assets/imgInfoUser/avatar.png',
-      id: '121251',
-      name: 'Juan Camilo',
-      lastaname: 'Céspedes Romero',
-      correo: 'juankamilocromero@gmail.com'
-    },
-    {
-      img: './../../../assets/imgInfoUser/avatar.png',
-      id: '121251',
-      name: 'Juan Camilo',
-      lastaname: 'Céspedes Romero',
-      correo: 'juankamilocromero@gmail.com'
-    },
-    {
-      img: './../../../assets/imgInfoUser/avatar.png',
-      id: '121251',
-      name: 'Juan Camilo',
-      lastaname: 'Céspedes Romero',
-      correo: 'juankamilocromero@gmail.com'
-    },
-    {
-      img: './../../../assets/imgInfoUser/avatar.png',
-      id: '121251',
-      name: 'Juan Camilo',
-      lastaname: 'Céspedes Romero',
-      correo: 'juankamilocromero@gmail.com'
-    },
+
   ];
 
-  constructor(private servicio: GeneralService) {
+  constructor(
+    private servicio: GeneralService,
+    public dialog: MatDialog) {
 
   }
 
@@ -69,7 +25,14 @@ export class UsersInfoComponent implements OnInit {
   }
 
   public verInfo(IDuser: number) {
-    alert("El id del Usuario es :" + IDuser);
+    const dialogRef = this.dialog.open(DetailUserComponent, {
+      width: '1000px',
+      data: { IDuser: IDuser },
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
   }
 
   getClientsList() {

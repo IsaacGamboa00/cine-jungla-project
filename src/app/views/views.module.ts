@@ -13,6 +13,7 @@ import { UsersInfoComponent } from './users-info/users-info.component';
 import { ServicesComponent } from './services/services.component';
 
 import { EmployeesInfoComponent } from './employees-info/employees-info.component';
+import { DetailUserComponent } from './detail-user/detail-user.component';
 
 
 
@@ -28,7 +29,8 @@ import { EmployeesInfoComponent } from './employees-info/employees-info.componen
     ShoppingCartComponent,
     UsersInfoComponent,
     ServicesComponent,
-    EmployeesInfoComponent
+    EmployeesInfoComponent,
+    DetailUserComponent
 
   ],
 

@@ -1,0 +1,40 @@
+<table class="default" *ngIf="this.info.length !=0">
+
+    <tr>
+
+        <th>Fecha Compra</th>
+
+        <th># Tickets Generales </th>
+
+        <th># Tickets Preferenciales </th>
+
+        <th>Puntaje tickets</th>
+
+        <th>Puntaje comida</th>
+
+        <th>Gasto en comida</th>
+
+        <th>Puntaje total</th>
+
+        <th>Total</th>
+
+    </tr>
+
+    <tr *ngFor="let client of this.info">
+
+        <td>{{client.fecha_compra}}</td>
+        <td>{{client.cantidad_boletas_general}}</td>
+        <td>{{client.cantidad_boletas_preferencial}}</td>
+        <td>{{client.puntaje_boletas}}</td>
+        <td>{{client.puntaje_comida}}</td>
+        <td>{{client.monto_comida}}</td>
+        <td>{{client.puntaje_total}}</td>
+        <td>{{client.monto_total}}</td>
+
+
+
+    </tr>
+
+</table>
+
+<h3 *ngIf="this.info.length == 0">No hay compras registradas</h3>

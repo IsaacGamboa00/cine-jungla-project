@@ -7,6 +7,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatDialogModule } from '@angular/material/dialog';
 
 import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
@@ -27,6 +28,7 @@ import { MatCardModule } from '@angular/material/card';
     MatProgressSpinnerModule,
     MatInputModule,
     MatSelectModule,
+    MatDialogModule,
     MatCardModule,
     CommonModule,
   ],
@@ -39,6 +41,7 @@ import { MatCardModule } from '@angular/material/card';
     MatToolbarModule,
     MatSelectModule,
     MatInputModule,
+    MatDialogModule,
     MatFormFieldModule,
     MatProgressSpinnerModule,
     CommonModule,
