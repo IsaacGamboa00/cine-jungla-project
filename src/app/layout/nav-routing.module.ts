@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from '../views/home/home.component';
 import { LoginComponent } from '../views/login/login.component';
@@ -7,6 +7,7 @@ import { BuyTicketsComponent } from '../views/buy-tickets/buy-tickets.component'
 import { ShoppingCartComponent } from '../views/shopping-cart/shopping-cart.component';
 import { UsersInfoComponent } from '../views/users-info/users-info.component';
 import { ServicesComponent } from '../views/services/services.component';
+import { EmployeesInfoComponent } from '../views/employees-info/employees-info.component';
 
 
 const routes: Routes = [
@@ -42,8 +43,10 @@ const routes: Routes = [
         path: 'services',
         component: ServicesComponent
       },
-
-
+{
+        path: 'employessInfo',
+        component: EmployeesInfoComponent
+      },
 
       {
         path: '**',
