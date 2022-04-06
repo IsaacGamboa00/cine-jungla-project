@@ -106,6 +106,7 @@ export class ShoppingCartComponent implements OnInit {
         console.log(success, 'funciono la monda')
         this.foodInfo = null;
         this.ticketsInfo = null;
+        alert('Comprea realizada');
       },
       (error) => {
 

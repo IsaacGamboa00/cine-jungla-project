@@ -64,6 +64,9 @@ export class HomeComponent implements OnInit {
       if (title == 'Peliculas') {
         this.router.navigateByUrl('/tickets');
       }
+      if (title == 'servicios') {
+        this.router.navigateByUrl('/services');
+      }
     } else {
       this.router.navigateByUrl('/login');
     }
