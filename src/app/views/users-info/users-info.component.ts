@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GeneralService } from '../services.service';
 
 @Component({
   selector: 'app-users-info',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UsersInfoComponent implements OnInit {
 
-  public users: any[]=[
+  public users: any[] = [
     {
       img: './../../../assets/imgInfoUser/avatar.png',
       id: '121251',
@@ -59,13 +60,24 @@ export class UsersInfoComponent implements OnInit {
     },
   ];
 
-  constructor() { }
+  constructor(private servicio: GeneralService) {
 
-  ngOnInit(): void {
   }
 
-  public verInfo(IDuser: number){
-    alert("El id del Usuario es :"+ IDuser);
+  ngOnInit(): void {
+    this.getClientsList();
+  }
+
+  public verInfo(IDuser: number) {
+    alert("El id del Usuario es :" + IDuser);
+  }
+
+  getClientsList() {
+    this.servicio.getClients().subscribe(
+      (success: any) => {
+        this.users = success.data;
+      }
+    );
   }
 
 }

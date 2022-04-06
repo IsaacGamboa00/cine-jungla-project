@@ -8,13 +8,14 @@
             <div class="div-cliente">
                 <div class="container_item_user text-center">
                     <div class="div-hover">
-                        <img class="img-user" [src]="u.img" alt="Usuario">
+                        <img class="img-user" src="./../../../assets/imgInfoUser/avatar.png" alt="Usuario">
                     </div>
                     <div class="my-5">
-                        <h3>{{u.id}}</h3>
-                        <h3>{{u.name}}</h3>
-                        <h3>{{u.lastname}}</h3>
+                        <h3>{{u.numero_id_cliente}}</h3>
+                        <h3>{{u.nombre}}</h3>
+                        <h3>{{u.apellido}}</h3>
                         <h4>{{u.correo}}</h4>
+                        <h4>{{u.edad}}</h4>
                         <button (click)="verInfo(u.id)" mat-raised-button color="primary">Ver Informacion</button>
                     </div>
                 </div>

@@ -18,5 +18,9 @@ export class GeneralService {
         return this.http.get<Array<any>>(this.url + "cuentas/select/" + id + "/" + pas + "/" + type + "")
     }
 
+    getClients() {
+        return this.http.get(this.url + "clientes/list");
+    }
+
 
 }
