@@ -4,18 +4,21 @@
 
 <div class="section-container empleados">
     <div class="row-team w-100 row">
-        <div class="col-md-3 p-5" *ngFor="let e of employees">
+        <div class="col-md-4 p-5" *ngFor="let e of employees">
             <div class="div-cliente">
-                <div class="container_item_user text-center">
-                    <div class="div-hover">
-                        <img class="img-user" [src]="e.img" alt="Usuario">
-                    </div>
-                    <div class="my-5">
-                        <h3>{{e.id}}</h3>
-                        <h3>{{e.name}}</h3>
-                        <h3>{{e.lastname}}</h3>
-                        <h4>{{e.email}}</h4>
-                        <button (click)="verInfo(e.id)" mat-raised-button color="primary">Ver Informacion</button>
+                <div class="container_item_user">
+
+                    <div class="my-5" id="info">
+                        <h3>ID: <label>{{e.numero_id_empleado}}</label></h3>
+                        <h3>Codigo: <label>{{e.codigo_empleado}}</label></h3>
+                        <h3>Nombre: <label>{{e.nombre + e.apellido}}</label></h3>
+                        <h3>Correo:<label>{{e.correo}}</label> </h3>
+                        <h3>Fecha de nacimiento: <label>{{e.fecha_nacimiento}}</label></h3>
+                        <h3>Genero: <label>{{e.genero}}</label></h3>
+                        <h3>Cargo: <label>{{e.cargo}}</label></h3>
+                        <h3>Telefono: <label>{{e.telefono}}</label></h3>
+                        <h3>Salario: <label>{{e.salario}}</label></h3>
+                        <h3>Inicio_contrato:<label>{{e.inicio_contrato}}</label> </h3>
                     </div>
                 </div>
             </div>

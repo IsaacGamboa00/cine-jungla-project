@@ -35,6 +35,26 @@ h3,h4{
     color: black;
 }
 
+.div-cliente{
+    background: white;
+    border-radius: 50px;
+    padding: 30px;
+    text-align: left;
+
+    label{
+        color: rgb(117, 117, 117);
+        font-weight:300;
+    }
+
+}
+
+.container_item_user{
+    #info{
+        text-align: left !important;
+    }
+    
+}
+
 .div-cliente:hover{
     transform: translateY(-5px);
     box-shadow: 2px 12px 16px rgba(0,0,0,0.2);

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GeneralService } from '../services.service';
 
 @Component({
   selector: 'app-employees-info',
@@ -7,43 +8,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EmployeesInfoComponent implements OnInit {
 
-  public employees: any[]=[
-    {
-      img: './../../../assets/imgInfoUser/avatar.png',
-      id: '123456',
-      name: 'Laura',
-      lastname: 'Ramirez',
-      email: 'lara@correo.edu.co'
-    },
-    {
-      img: './../../../assets/imgInfoUser/avatar.png',
-      id: '123456',
-      name: 'Laura',
-      lastname: 'Ramirez',
-      email: 'lara@correo.edu.co'
-    },
-    {
-      img: './../../../assets/imgInfoUser/avatar.png',
-      id: '123456',
-      name: 'Laura',
-      lastname: 'Ramirez',
-      email: 'lara@correo.edu.co'
-    },
-    {
-      img: './../../../assets/imgInfoUser/avatar.png',
-      id: '123456',
-      name: 'Laura',
-      lastname: 'Ramirez',
-      email: 'lara@correo.edu.co'
-    }
+  public employees: any[] = [
+
   ];
 
-  constructor() { }
-  public verInfo(IDuser: number){
-    alert("El id del Usuario es :"+ IDuser);
+  constructor(
+    private servicio: GeneralService,
+  ) { }
+
+  public verInfo(IDuser: number) {
+    alert("El id del Usuario es :" + IDuser);
   }
 
   ngOnInit(): void {
+
+    this.getClientsList();
   }
 
+  getClientsList() {
+    this.servicio.getPersonal().subscribe(
+      (success: any) => {
+        this.employees = success.data;
+      }
+    );
+  }
 }

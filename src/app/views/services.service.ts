@@ -22,6 +22,10 @@ export class GeneralService {
         return this.http.get(this.url + "clientes/list");
     }
 
+    getPersonal() {
+        return this.http.get(this.url + "empleados/list");
+    }
+
     getClientByID(id: any) {
         return this.http.get(this.url + "compras/select-cliente/" + id);
     }
