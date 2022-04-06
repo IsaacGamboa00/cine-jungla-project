@@ -6,6 +6,7 @@ import { BuyFoodComponent } from '../views/buy-food/buy-food.component';
 import { BuyTicketsComponent } from '../views/buy-tickets/buy-tickets.component';
 import { ShoppingCartComponent } from '../views/shopping-cart/shopping-cart.component';
 import { UsersInfoComponent } from '../views/users-info/users-info.component';
+import { ServicesComponent } from '../views/services/services.component';
 
 
 const routes: Routes = [
@@ -32,11 +33,15 @@ const routes: Routes = [
 
         path: 'shoppingCart',
         component: ShoppingCartComponent
-  },
-  {
-    path: 'UsersInfomation',
-    component: UsersInfoComponent
-  },
+      },
+      {
+        path: 'UsersInfomation',
+        component: UsersInfoComponent
+      },
+      {
+        path: 'services',
+        component: ServicesComponent
+      },
 
 
 

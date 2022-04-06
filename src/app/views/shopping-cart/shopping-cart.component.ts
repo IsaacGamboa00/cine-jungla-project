@@ -8,14 +8,18 @@ import { GeneralService } from '../services.service';
 })
 export class ShoppingCartComponent implements OnInit {
 
-  public foodInfo: any;
+  public foodInfo: any = null;
+  public ticketsInfo: any = null;
 
   constructor(private services: GeneralService) {
 
     this.foodInfo = this.services.foodInfo;
+    this.ticketsInfo = this.services.ticketsInfo;
   }
 
   ngOnInit(): void {
   }
+
+  buy() { }
 
 }

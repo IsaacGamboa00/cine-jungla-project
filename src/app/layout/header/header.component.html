@@ -4,11 +4,17 @@
             <img src="./../../../assets/logo/Cine Jungla.png" alt="Cine Jungla">
         </div>
         <div class="w-75 aling-center-vertical">
-            <ul>
+            <ul *ngIf="!isLogin()">
                 <li routerLink="/home">HOME</li>
                 <li (click)="to('servicio-section')">SERVICIOS</li>
                 <li (click)="to('team-section')">EQUIPO DE TRABAJO</li>
                 <li routerLink="/login">LOGIN</li>
+            </ul>
+            <ul *ngIf="isLogin()">
+                <li routerLink="/home">HOME</li>
+                <li routerLink="/services">SERVICIOS</li>
+                <li routerLink="/shoppingCart">CARRITO DE COMPRA</li>
+                <li (click)="logOut()">LOGOUT</li>
             </ul>
         </div>
     </div>

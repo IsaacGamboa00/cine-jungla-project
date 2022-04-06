@@ -52,6 +52,6 @@ export class LoginComponent implements OnInit {
   }
 
   navigate() {
-    this.router.navigateByUrl('/tickets');
+    this.router.navigateByUrl('/services');
   }
 }

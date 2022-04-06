@@ -1,4 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { GeneralService } from '../../views/services.service';
 
 @Component({
   selector: 'app-header',
@@ -7,7 +9,10 @@ import { Component, HostListener, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   public isSticky: boolean = false;
-  constructor() { }
+  constructor(
+    private router: Router,
+    private generalServices: GeneralService,
+  ) { }
 
   ngOnInit(): void {
   }
@@ -26,5 +31,20 @@ export class HeaderComponent implements OnInit {
 
   to(section: string) {
     document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  isLogin(): boolean {
+    if (localStorage.getItem("id") != null && localStorage.getItem("pass") != null) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  logOut() {
+    localStorage.clear();
+    this.generalServices.foodInfo = null;
+    this.generalServices.ticketsInfo = null;
+    this.router.navigateByUrl('/home')
   }
 }

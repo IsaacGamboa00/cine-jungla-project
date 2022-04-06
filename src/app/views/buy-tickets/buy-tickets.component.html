@@ -21,6 +21,29 @@
                 <h3>
                     Sala: {{movie.numero_sala_multiplex}}
                 </h3>
+                <h3>
+                    Sillas disponibles generales: {{movie.cantidad_sillas_general}}
+                </h3>
+                <h3>
+                    Sillas disponibles preferencial: {{movie.cantidad_sillas_preferencial}}
+                </h3>
+                <h3>
+                    Sala: {{movie.numero_sala_multiplex}}
+                </h3>
+                <h3>
+                    Silla General: {{movie.precio_silla_general}}
+                </h3>
+                <h3>
+                    Silla Preferencial: {{movie.precio_silla_preferencial}}
+                </h3>
+                <label>Preferencial</label>
+                <input #ticketPreferencial class="cantidad" type="number" min="0" max="50" value="0">
+                <label>General</label>
+                <input #ticketHGeneral class="cantidad" type="number" min="0" max="50" value="0">
+                <button
+                    (click)="addTickets(ticketHGeneral.value,ticketPreferencial.value,movie.precio_silla_general,movie.precio_silla_preferencial,movie.numero_sala_multiplex , movie.nombre)">
+                    Añadir a Carro
+                </button>
             </div>
         </div>
 
