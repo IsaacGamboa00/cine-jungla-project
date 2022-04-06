@@ -23,7 +23,6 @@ export class LoginComponent implements OnInit {
   }
 
   onSubmit() {
-    console.log(this.form.value)
     const id = Number(this.form.value.numero_id_empleado);
     const pass = this.form.value.password;
     const type = this.form.value.tipo_id_empleado;
@@ -31,7 +30,7 @@ export class LoginComponent implements OnInit {
       (success: any) => {
         console.log('entro', success);
         if (success.data.length > 0) {
-          this.saveLocalStorage(id, pass);
+          this.saveLocalStorage(id, pass, type);
           this.navigate();
 
         } else {
@@ -45,9 +44,10 @@ export class LoginComponent implements OnInit {
     )
   }
 
-  saveLocalStorage(id: number, pass: string) {
+  saveLocalStorage(id: number, pass: string, type: string) {
     localStorage.clear();
     localStorage.setItem('id', id.toString());
+    localStorage.setItem('type', type.toString());
     localStorage.setItem('pass', pass);
   }
 

@@ -43,7 +43,7 @@ export class ServicesComponent implements OnInit {
         this.router.navigateByUrl('/UsersInfomation');
       }
       if (title == 'Informacion de Personal') {
-        this.router.navigateByUrl('/tickets');
+        this.router.navigateByUrl('/employessInfo');
       }
     } else {
       this.router.navigateByUrl('/login');

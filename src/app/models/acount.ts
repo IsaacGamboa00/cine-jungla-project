@@ -7,11 +7,22 @@ export interface Acount {
 
 }
 
+export interface Client {
+    tipo_id_empleado: string;
+    numero_id_empleado: number;
+
+}
+
 export class ModelAcount {
     constructor() { }
 
     public model: Acount = {
         password: '',
+        tipo_id_empleado: '',
+        numero_id_empleado: 0
+    }
+
+    public modelClient: Client = {
         tipo_id_empleado: '',
         numero_id_empleado: 0
     }

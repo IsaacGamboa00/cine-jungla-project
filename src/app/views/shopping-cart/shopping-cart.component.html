@@ -36,6 +36,43 @@
 
     </div>
 
+    <div class="info-container">
+        <h2>Informacion de cliente</h2>
+        <div class="login-container">
+            <h2>Inicio de sesión</h2>
+            <div class="form-container">
+                <form [formGroup]="this.form">
+                    <div class="form">
+                        <mat-form-field appearance="outline">
+                            <mat-label>Numero de identificacion</mat-label>
+                            <input matInput type="text" formControlName="numero_id_empleado">
+                        </mat-form-field>
+                        <mat-form-field appearance="outline">
+                            <mat-label>Tipo de identificación</mat-label>
+                            <mat-select formControlName="tipo_id_empleado">
+                                <mat-option value="CC">
+                                    CC
+                                </mat-option>
+                                <mat-option value="TI">
+                                    TI
+                                </mat-option>
+                                <mat-option value="CE">
+                                    CE
+                                </mat-option>
+                                <mat-option value="PA">
+                                    PA
+                                </mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+
     <button mat-raised-button color="primary" (click)="buy()">Hacer Compra</button>
 
 </div>

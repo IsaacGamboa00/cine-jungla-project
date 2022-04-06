@@ -26,12 +26,9 @@ import { EmployeesInfoComponent } from './employees-info/employees-info.componen
     BuyFoodComponent,
     BuyTicketsComponent,
     ShoppingCartComponent,
-
     UsersInfoComponent,
-
-      ServicesComponent,
-
-      EmployeesInfoComponent
+    ServicesComponent,
+    EmployeesInfoComponent
 
   ],
 
